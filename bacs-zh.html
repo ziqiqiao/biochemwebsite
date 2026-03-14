@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACS — 曝气控制 | BioChem Technology, Inc.</title>
+  <meta name="description" content="生物工艺曝气控制系统（BACS）——预测性曝气控制，在稳定各区溶解氧的同时，最多可降低40%的能耗。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="Images/fc77db18783cddd9736656b1b329810e.jpg" type="image/png">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index-zh.html" class="logo" aria-label="BioChem Technology 首页">
+        <img src="Images/fc77db18783cddd9736656b1b329810e.jpg" alt="BioChem Technology, Inc.">
+      </a>
+      <button class="nav-toggle" aria-label="切换导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="main-nav">
+        <li><a href="index-zh.html">首页</a></li>
+        <li><a href="about-zh.html">关于我们</a></li>
+        <li>
+          <a href="products-zh.html" class="active">我们的产品</a>
+          <ul class="dropdown-menu">
+            <li><a href="bacs-zh.html">BACS — 曝气控制</a></li>
+            <li><a href="bios-zh.html">BIOS — 工艺优化</a></li>
+          </ul>
+        </li>
+        <li><a href="services-zh.html">咨询服务</a></li>
+        <li><a href="downloads-zh.html">下载</a></li>
+        <li><a href="contact-zh.html">联系我们</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn">🌐 语言 ▾</button>
+        <div class="lang-dropdown">
+          <a href="bacs.html">English</a>
+          <a href="bacs-zh.html" class="active">中文</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="hero page-hero" style="background-image: url('Images/prodintro.jpg');">
+    <div class="hero-content">
+      <span class="hero-eyebrow">核心产品</span>
+      <h1>生物工艺曝气控制系统</h1>
+      <p class="tagline">BACS</p>
+    </div>
+  </section>
+
+  <!-- ========== BACS CONTENT ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="product-block" style="padding-top: 0; border-bottom: none;">
+
+        <div class="animate">
+          <p>生物工艺曝气控制系统（BACS）利用基于过程的计算，将曝气鼓风机的控制与反应池控制阀的控制相结合，在各独立曝气区（见下图）实现精确的溶解氧（DO）浓度。这反过来可稳定处理过程，提高处理效率，并将曝气能耗降低多达40%。BACS 具有传统反馈控制无法提供或难以实现的独特功能，包括"最开阀"逻辑、针对所有过程和条件变化的自整定，以及减少阀门执行机构磨损。</p>
+          <p>传统的曝气控制系统采用 PID（比例-积分-微分）控制环路的方法：</p>
+          <ul class="styled-list">
+            <li>控制鼓风机，在向好氧区供应散流空气的管道集管中维持恒定压力。</li>
+            <li>通过调整阀门开度，进而调整各区气流量，从而控制各好氧区的 DO 浓度。</li>
+          </ul>
+        </div>
+
+        <!-- BACSFig1 -->
+        <div class="animate" style="margin-top: 2rem; text-align: center;">
+          <img src="Images/BACSFig1.jpg" alt="BACS 工作原理基本示意图" style="border-radius: var(--radius-lg); box-shadow: var(--shadow); max-width: 100%; height: auto;">
+          <p style="font-size: 0.85rem; color: var(--gray); margin-top: 0.75rem;">生物工艺曝气控制系统概述</p>
+        </div>
+
+        <div class="animate" style="margin-top: 2rem;">
+          <p>实践经验表明，PID 控制是控制剩余 DO 浓度的一种效果欠佳的方法。PID 参数通常针对平均或典型的进水条件进行整定。然而，由于污水厂的污染负荷全天不断变化，实际条件从来不是真正的"平均"状态，因此根据当前负荷情况，通常会出现以下两种情形之一。在低负荷期间，PID 控制环路系统会出现过度整定，导致好氧区 DO 浓度产生大幅振荡。而在高负荷期间，当 PID 控制环路整定不足时，由于控制系统试图"追赶"需氧量的增加，会出现 DO 浓度偏低的情况。由于进水流量的负荷持续变化，这意味着处理系统几乎从未在高效运行状态下运行。</p>
+        </div>
+
+        <!-- bacs1 -->
+        <div class="animate" style="margin-top: 2rem; text-align: center;">
+          <img src="Images/bacs1.png" alt="BACS 控制细节 1" style="border-radius: var(--radius); box-shadow: var(--shadow-sm); max-width: 100%; height: auto;">
+        </div>
+
+        <div class="animate" style="margin-top: 2rem;">
+          <p>此外，鼓风机控制与阀门控制之间缺乏通信，且各阀门控制相互独立，因此任何一区气流量的变化都可能导致压力振荡和控制环路之间的不稳定。</p>
+          <p style="margin-top: 1rem;">BioChem BACS 不使用 PID 控制环路，而是采用专有的三步法来维持溶解氧设定值。首先，BACS 利用各控制区气流量的变化和剩余 DO 来计算呼吸速率的变化，并据此计算各区的需气量。其次，它将总需气量（各区需气量之和）发送给鼓风机控制。最后，当鼓风机达到新设定点后，BACS 快速高效地调整各好氧区的控制阀，提供控制系统计算出的气流量。然后保持一切稳定，直到系统稳定（通常为10至15分钟），然后重复该过程。</p>
+        </div>
+
+        <!-- bacs2 -->
+        <div class="animate" style="margin-top: 2rem; text-align: center;">
+          <img src="Images/bacs2.png" alt="BACS 控制细节 2" style="border-radius: var(--radius); box-shadow: var(--shadow-sm); max-width: 100%; height: auto;">
+        </div>
+
+        <div class="animate" style="margin-top: 2rem;">
+          <p>采用这种方法，BACS 曝气控制系统能够将鼓风机控制与 DO 控制整合，无论负荷条件如何变化，均能将 DO 浓度维持在非常接近 DO 设定值的水平——这是对 PID 控制环路性能的巨大改进——最终实现在较低压力下更低的总气流量，从而降低电能消耗。</p>
+          <p style="margin-top: 1rem;">总结来说，BACS 的主要优势包括：</p>
+          <ul class="styled-list" style="margin-top: 1rem;">
+            <li>无论负荷如何变化，均可维持恒定的溶解氧</li>
+            <li>将 DO 控制与鼓风机控制整合，稳定鼓风机和阀门的运行</li>
+            <li>启动简便——无需整定或重新整定</li>
+            <li>最大限度减少 DO 浓度的振荡</li>
+            <li>"最开阀"逻辑最大限度降低鼓风机能耗</li>
+            <li>通过优化这些过程，阀门和执行机构的持续运行减少，从而最大限度降低磨损；以及</li>
+            <li>系统防止溶解氧渗入处理反应器的缺氧区。</li>
+          </ul>
+        </div>
+
+        <div class="animate" style="margin-top: 1.5rem;">
+          <p>请<a href="contact-zh.html" style="color: var(--blue);">联系我们</a>，了解更多有关 BACS 如何提高您系统效率的信息。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <div class="cta-banner animate">
+    <h2>对 BACS 感兴趣？</h2>
+    <p>
+      联系我们的团队，探讨 BACS 如何应用于您的具体工厂配置和工艺目标。
+    </p>
+    <a href="contact-zh.html" class="btn btn-primary">联系我们</a>
+    &nbsp;&nbsp;
+    <a href="downloads-zh.html" class="btn btn-outline">下载技术论文</a>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">Bio<span>Chem</span> Technology, Inc.</div>
+          <p>水资源回收生物工艺优化专家。面向市政污水处理市场的下一代数字化解决方案。</p>
+        </div>
+        <div class="footer-col">
+          <h4>导航</h4>
+          <ul>
+            <li><a href="index-zh.html">首页</a></li>
+            <li><a href="about-zh.html">关于我们</a></li>
+            <li><a href="products-zh.html">我们的产品</a></li>
+            <li><a href="services-zh.html">咨询服务</a></li>
+            <li><a href="downloads-zh.html">下载</a></li>
+            <li><a href="contact-zh.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>产品</h4>
+          <ul>
+            <li><a href="bacs-zh.html">BACS</a></li>
+            <li><a href="bios-zh.html">BIOS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>联系方式</h4>
+          <p>221 Boston Post Rd E<br>Marlborough, MA 01752</p>
+          <a href="tel:8573098332">857-309-8332</a><br>
+          <a href="mailto:general@biochemtech.com">general@biochemtech.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BioChem Technology, Inc. 版权所有。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

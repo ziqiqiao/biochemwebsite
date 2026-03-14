@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BACS — Aeration Control | BioChem Technology, Inc.</title>
+  <meta name="description" content="Bioprocess Aeration Control System (BACS) — predictive aeration control that reduces energy by up to 40% while stabilizing dissolved oxygen in every zone.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="Images/fc77db18783cddd9736656b1b329810e.jpg" type="image/png">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo" aria-label="BioChem Technology Home">
+        <img src="Images/fc77db18783cddd9736656b1b329810e.jpg" alt="BioChem Technology, Inc.">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="products.html" class="active">Our Products</a>
+          <ul class="dropdown-menu">
+            <li><a href="bacs.html">BACS — Aeration Control</a></li>
+            <li><a href="bios.html">BIOS — Process Optimization</a></li>
+          </ul>
+        </li>
+        <li><a href="services.html">Consulting</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn">🌐 Language ▾</button>
+        <div class="lang-dropdown">
+          <a href="bacs.html" class="active">English</a>
+          <a href="bacs-zh.html">中文</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="hero page-hero" style="background-image: url('Images/prodintro.jpg');">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Core Product</span>
+      <h1>Bioprocess Aeration Control System</h1>
+      <p class="tagline">BACS</p>
+    </div>
+  </section>
+
+  <!-- ========== BACS CONTENT ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="product-block" style="padding-top: 0; border-bottom: none;">
+
+        <div class="animate">
+          <p>The Bioprocess Aeration Control System (BACS) uses process-based calculations to combine the control of the aeration blowers and the control valves in the reactor tanks to achieve precise levels of dissolved oxygen (DO) in each individual aeration zone (see below). This in turn stabilizes the treatment process, improves treatment efficiency and reduces aeration energy requirements by as much as 40%. The BACS has a number of unique features that conventional feed-back control either cannot provide or cannot do well. These include "most-open-valve" logic, self-tuning for all process and condition changes and reduced valve actuator wear.</p>
+          <p>Traditional aeration control systems use an approach called PID (proportional-integrative-derivative) control loops to:</p>
+          <ul class="styled-list">
+            <li>Control the blowers to maintain a constant pressure in the pipe header that supplies the diffused air to the aerobic zones.</li>
+            <li>Adjust the airflow to each zone by adjusting the valve position and, hence, the DO level in each aerobic zone.</li>
+          </ul>
+        </div>
+
+        <!-- BACSFig1 -->
+        <div class="animate" style="margin-top: 2rem; text-align: center;">
+          <img src="Images/BACSFig1.jpg" alt="A basic schematic showing how BACS works" style="border-radius: var(--radius-lg); box-shadow: var(--shadow); max-width: 100%; height: auto;">
+          <p style="font-size: 0.85rem; color: var(--gray); margin-top: 0.75rem;">Summary of the Bioprocess Aeration Control System</p>
+        </div>
+
+        <div class="animate" style="margin-top: 2rem;">
+          <p>Experience has shown PID control to be a poor method of controlling residual DO concentrations. PID parameters are typically tuned to control average or typical influent conditions. However, because the contaminants load to a plant changes throughout the day, actual conditions are never really "average" and hence, one of two scenarios typically occurs depending on the current loading. During low loading periods, PID control loop systems will over-tune and cause large oscillations in the DO concentration in the aerobic zones. And during high loading periods when the PID control loop is under-tuned, low DO concentrations will occur as the control system tries to "catch-up" to the increase in oxygen demand. Because the loading of the incoming stream is constantly changing, this means that the treatment system is virtually never operating at an efficient level.</p>
+        </div>
+
+        <!-- bacs1 -->
+        <div class="animate" style="margin-top: 2rem; text-align: center;">
+          <img src="Images/bacs1.png" alt="BACS control detail 1" style="border-radius: var(--radius); box-shadow: var(--shadow-sm); max-width: 100%; height: auto;">
+        </div>
+
+        <div class="animate" style="margin-top: 2rem;">
+          <p>In addition, the blower controls do not communicate with the valve controls, and each valve control is independent of the others, so changes in air flow in any one zone can lead to pressure oscillations and instabilities between control loops.</p>
+          <p style="margin-top: 1rem;">The BioChem BACS does not use PID control loops, but instead utilizes a proprietary three-step approach to maintaining a dissolved oxygen set-point. First, the BACS uses changes in airflow rate and residual DO in each control zone to calculate changes in respiration rate, and from that it calculates the airflow requirement of each zone. Second, it sends the total airflow requirement (the sum of the individual zones) to the blower control. Finally, when the blowers have reached the new set point, the BACS quickly and efficiently adjusts the control valves to each aerobic zone to provide the airflow calculated by the control system. It then holds everything steady until the system stabilizes, typically 10 to 15 minutes, before it repeats the process.</p>
+        </div>
+
+        <!-- bacs2 -->
+        <div class="animate" style="margin-top: 2rem; text-align: center;">
+          <img src="Images/bacs2.png" alt="BACS control detail 2" style="border-radius: var(--radius); box-shadow: var(--shadow-sm); max-width: 100%; height: auto;">
+        </div>
+
+        <div class="animate" style="margin-top: 2rem;">
+          <p>Using this approach, the BACS aeration control system is able to integrate the blower control with the DO control and maintain the DO concentration very close to the DO set-point regardless of changing loading conditions, a vast improvement over the performance of PID control loops — ultimately resulting in lower total airflow at lower pressure, and hence, reduced electrical energy consumption.</p>
+          <p style="margin-top: 1rem;">In summary, the key advantages of the BACS include the following:</p>
+          <ul class="styled-list" style="margin-top: 1rem;">
+            <li>Maintenance of constant dissolved oxygen, independent of loading</li>
+            <li>Integration of DO control with blower control, to stabilize the operation of blowers and valves</li>
+            <li>Easy start-up - does not require tuning or re-tuning</li>
+            <li>Minimization of oscillations in DO concentrations</li>
+            <li>The "Most-Open-Valve" logic minimizes blower energy consumption</li>
+            <li>By optimizing these processes, the constant operation of valves and actuators is reduced, and hence wear and tear is minimized; and</li>
+            <li>The system prevents dissolved oxygen bleed-through to anoxic zone of the treatment reactor.</li>
+          </ul>
+        </div>
+
+        <div class="animate" style="margin-top: 1.5rem;">
+          <p>Please <a href="contact.html" style="color: var(--blue);">contact us</a> for more information regarding how BACS can improve the efficiency of your system.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <div class="cta-banner animate">
+    <h2>Interested in BACS?</h2>
+    <p>
+      Contact our team to discuss how BACS can be applied to your specific
+      plant configuration and process goals.
+    </p>
+    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    &nbsp;&nbsp;
+    <a href="downloads.html" class="btn btn-outline">Download Technical Papers</a>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-name">Bio<span>Chem</span> Technology, Inc.</div>
+          <p>Water Reclamation Biological Process Optimization Experts. Next-generation digital solutions for the municipal wastewater treatment market.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="services.html">Consulting</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="bacs.html">BACS</a></li>
+            <li><a href="bios.html">BIOS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>221 Boston Post Rd E<br>Marlborough, MA 01752</p>
+          <a href="tel:8573098332">857-309-8332</a><br>
+          <a href="mailto:general@biochemtech.com">general@biochemtech.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BioChem Technology, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
