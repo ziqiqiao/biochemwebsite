@@ -92,7 +92,7 @@
     });
   });
 
-  /* --- Contact Form (Formspree) --- */
+  /* --- Contact Form --- */
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     // Keep _replyto in sync with the email field
@@ -134,7 +134,7 @@
         });
 
         const data = await res.json();
-        if (res.ok && data.ok) {
+        if (res.ok && data.success) {
           contactForm.reset();
           formSuccess.style.display = 'block';
         } else {
