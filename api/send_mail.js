@@ -1,16 +1,16 @@
 const nodemailer = require('nodemailer');
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ success: false, error: 'Method not allowed' });
   }
 
   // Honeypot check
-  if (req.body._gotcha) {
+  if (req.body && req.body._gotcha) {
     return res.status(200).json({ success: true });
   }
 
-  const { firstName, lastName, company, phone, email, subject, message } = req.body;
+  const { firstName, lastName, company, phone, email, subject, message } = req.body || {};
 
   // Validate required fields
   if (!firstName || !lastName || !company || !email || !message) {
@@ -51,4 +51,4 @@ export default async function handler(req, res) {
     console.error('Mail error:', err);
     return res.status(500).json({ success: false, error: 'Failed to send email' });
   }
-}
+};
